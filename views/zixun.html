@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资讯</title>
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="shortcuticon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578603_wo3qw5q2pe.css">
+		
+	</head>
+</style>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		
+		<style>
+			.mui-bar-tab .mui-tab-item.mui-active {
+				color: orange;
+			}
+				
+		</style>
+	<body>
+		
+		<h1>这是一个资讯界面</h1>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="../index.html">
+				<div class="iconfont icon-dianying" ></div>
+				<div class="mui-tab-label">电影</div>
+			</a>
+			<a class="mui-tab-item " href="./yingyuan.html">
+				<div class="iconfont icon-yingyuan" ></div>
+				<div class="mui-tab-label">影院</div>
+			</a>
+			<a class="mui-tab-item mui-active" >
+				<div class="iconfont icon-zixun" ></div>
+				<div class="mui-tab-label">资讯</div>
+			</a>
+			<a class="mui-tab-item" href="./myself.html">
+				<div class="iconfont icon-wode"></div>
+				<div class="mui-tab-label">我的</div>
+			</a>
+			
+		</nav>
+	</body>
+<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		// mui中屏蔽了点击事件，下面的代码表示不让它屏蔽点击事件
+		mui("body").on("tap","a",function(){
+			document.location.href = this.href;
+		})
+	</script>
+</html>
